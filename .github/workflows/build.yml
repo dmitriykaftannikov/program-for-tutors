@@ -9,6 +9,11 @@ on:
     paths:
       - 'app/**'
       - '.github/workflows/build.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: write
 
 jobs:
   test:
