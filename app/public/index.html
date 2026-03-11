@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Management System</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         :root {
             --font-size: 14px;
@@ -191,6 +190,60 @@
             background-color: var(--red-50);
             border-radius: 0.25rem;
         }
+
+        /* Local utility classes replacing external Tailwind CDN */
+        .flex { display: flex; }
+        .grid { display: grid; }
+        .flex-col { flex-direction: column; }
+        .flex-1 { flex: 1 1 0%; }
+        .items-center { align-items: center; }
+        .justify-center { justify-content: center; }
+        .justify-between { justify-content: space-between; }
+        .gap-2 { gap: 0.5rem; }
+        .gap-4 { gap: 1rem; }
+
+        .w-full { width: 100%; }
+        .w-64 { width: 16rem; }
+        .w-96 { width: 24rem; }
+        .h-12 { height: 3rem; }
+        .max-w-4xl { max-width: 56rem; }
+        .min-h-screen { min-height: 100vh; }
+        .min-h-\[80vh\] { min-height: 80vh; }
+        .max-h-32 { max-height: 8rem; }
+        .max-h-64 { max-height: 16rem; }
+        .overflow-y-auto { overflow-y: auto; }
+
+        .mx-auto { margin-left: auto; margin-right: auto; }
+        .mt-2 { margin-top: 0.5rem; }
+        .mb-6 { margin-bottom: 1.5rem; }
+        .mb-8 { margin-bottom: 2rem; }
+        .p-2 { padding: 0.5rem; }
+        .p-8 { padding: 2rem; }
+
+        .space-y-1 > * + * { margin-top: 0.25rem; }
+        .space-y-2 > * + * { margin-top: 0.5rem; }
+        .space-y-3 > * + * { margin-top: 0.75rem; }
+        .space-y-4 > * + * { margin-top: 1rem; }
+        .space-y-6 > * + * { margin-top: 1.5rem; }
+        .space-y-8 > * + * { margin-top: 2rem; }
+
+        .rounded { border-radius: 0.25rem; }
+        .font-medium { font-weight: 500; }
+        .text-center { text-align: center; }
+        .text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+        .text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+        .text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+        .text-white { color: #ffffff; }
+        .text-purple-600 { color: var(--purple-600); }
+        .text-gray-500 { color: #6b7280; }
+        .opacity-75 { opacity: 0.75; }
+        .cursor-pointer { cursor: pointer; }
+
+        .bg-white { background-color: #ffffff; }
+        .bg-gray-50 { background-color: var(--gray-50); }
+        .bg-gray-100 { background-color: var(--gray-100); }
+        .bg-purple-600 { background-color: var(--purple-600); }
+        .hover\:bg-gray-100:hover { background-color: var(--gray-100); }
     </style>
 </head>
 <body class="min-h-screen bg-purple-600 p-8">
